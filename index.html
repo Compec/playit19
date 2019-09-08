@@ -91,9 +91,6 @@
     <style amp-custom>
         /* You can add global styles to this file, and also import other style files */
 
-/* eeeeeeeeeeeeeeeeeee */
-
-
 
 
 
@@ -264,30 +261,6 @@ amp-selector[role=tablist].tabs-with-flex {
         font-weight: bold;
         color: black;
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* bb eeeee */
         body {
             margin: 0;
             padding: 0;
@@ -377,7 +350,7 @@ amp-selector[role=tablist].tabs-with-flex {
             top: 0;
             bottom: 0;
             right: 0;
-            opacity: 0.75;
+            opacity: 0.4;
             background-color: #252525;
             background-size: 100% 100%;
         }
@@ -668,12 +641,13 @@ amp-selector[role=tablist].tabs-with-flex {
             font-size: 1.4em;
             padding-top: 8px;
             text-align: center;
+            color: #B4C601;
+            background: rgba(0, 0, 0, 0.6);;
         }
 
         .time-counters {
             font-size: 1.5em;
             font-weight: bold;
-            color: white;
         }
 
         .time-label {
@@ -856,7 +830,6 @@ amp-selector[role=tablist].tabs-with-flex {
             text-align: left;
         }
 
-        .detail-single-carousel {}
 
         .carousel-item {
             padding: 8px 8px 8px 8px;
@@ -1547,7 +1520,7 @@ amp-selector[role=tablist].tabs-with-flex {
         <div class="toolbar-wrapper">
             <a href="/">
                 <div class="toolbar-icon">
-                    <amp-img class="toolbar-image" src="assets/logo.png" alt="Boğaziçi Techsummit Icon" layout="fixed"
+                    <amp-img class="toolbar-image" src="assets/logo.png" alt="PlayIT Icon" layout="fixed"
                         width="160" height="60">
                     </amp-img>
                 </div>
@@ -1562,18 +1535,7 @@ amp-selector[role=tablist].tabs-with-flex {
                     <i class="fas fa-calendar-alt"></i>
                     <div class="menu-item-text">Program</div>
                 </a>
-                <!-- <a href="/sponsorlar" class="menu-item-link">
-                    <i class="fas fa-life-ring"></i>
-                    <div class="menu-item-text">Sponsorlar</div>
-                </a> -->
-                <!-- <a href="/hakkımızda" class="menu-item-link disabled">
-                    <i class="fas fa-info"></i>
-                    <div class="menu-item-text">Hakkımızda</div>
-                </a> -->
-                <!-- <a href="https://go.compec.org/playITkayit" class="ticket">
-                    <i class="fas fa-ticket-alt"></i>
-                    <div class="menu-item-text">Bilet Al</div>
-                </a> -->
+              
                 <a href="https://go.compec.org/playITkayit" class="menu-item-link" >
                     <i class="fas fa-ticket-alt"></i>
                     <div style="color:red;" class="menu-item-text">Bilet Al</div>
@@ -1593,7 +1555,7 @@ amp-selector[role=tablist].tabs-with-flex {
                 <hr class="hr-custom">
             </div>
             <div class="hero-title">
-                <amp-img class="hero-logo" src="assets/logo_white.png" alt="Boğaziçi Techsummit" layout="responsive"
+                <amp-img class="hero-logo" src="assets/logo_white.png" alt="PlayIT" layout="responsive"
                     width="603" height="226">
                 </amp-img>
                 <h2 class="font-xl font-white text-center margin-shrink-m">
@@ -1606,25 +1568,25 @@ amp-selector[role=tablist].tabs-with-flex {
                     <template type="amp-mustache">
                         <div class="countdown-container">
                             <div class="counter text-center">
-                                <div class="counter-num orange-bg">
+                                <div class="counter-num">
                                     <span class="time-counters">{{dd}}</span>
                                 </div>
                                 <div class="time-label">Gün</div>
                             </div>
                             <div class="counter text-center">
-                                <div class="counter-num  red-bg">
+                                <div class="counter-num">
                                     <span class="time-counters">{{hh}}</span>
                                 </div>
                                 <div class="time-label">Saat</div>
                             </div>
                             <div class="counter text-center">
-                                <div class="counter-num  green-bg">
+                                <div class="counter-num">
                                     <span class="time-counters">{{mm}}</span>
                                 </div>
                                 <div class="time-label">Dakika</div>
                             </div>
                             <div class="counter text-center">
-                                <div class="counter-num  blue-bg">
+                                <div class="counter-num">
                                     <span class="time-counters">{{ss}}</span>
                                 </div>
                                 <div class="time-label">Saniye</div>
@@ -1635,52 +1597,32 @@ amp-selector[role=tablist].tabs-with-flex {
                 </amp-date-countdown>
             </div>
 
-            <div class="social-media-container">
-                <h3 class="font-white text-center margin-shrink-m">Hemen Bilet Al'a tıklayarak biletini alabilirsin.</h3>
-            </div>
 
             <div class="hero-button hero-button-ticket">
                 <a href="https://go.compec.org/playITkayit" class="">
-                    <i class="fas fa-ticket-alt"></i>Bilet Al
+                    <i class="fas fa-ticket-alt"></i> Bilet Al
                 </a>
+                
+            </div>
+            
+            <div class="hero-button hero-button-ticket" style="background-color: orange;">
+                <a href="https://www.instagram.com/bounplayit/" class="">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                
             </div>
 
-            <!-- <div class="hero-button hero-button-live">
-                <a href="/izle" class="">
-                    <i class="fas fa-video"></i> Canlı youtube Yayın - değiştir-
-                </a>
-            </div> -->
 
-
-            <!--
-                <div class="subscribe-container">
-                    <form action="https://us-central1-firstproject-65315.cloudfunctions.net/subscribe" method="get" target="_top">
-                
-                        <input name="email" type="email" value="" class="mail-input" placeholder="Email Adresi...">
-                        <div class="response response-success" submit-success>
-                            <template type="amp-mustache">
-                                Mailiniz başarılı bir şekilde kaydedildi
-                            </template>
-                        </div>
-                        <div class="response response-fail" submit-error>
-                            <template type="amp-mustache">
-                                Bir problem oluştu
-                            </template>
-                        </div>
-                        <br>
-                        <input type="submit" value="Takipte Kal" name="subscribe" class="button">
-                    </form>
-                </div>
-            -->
+           
         </div>
-        <!-- <div class="bottom white-bottom"></div> -->
+       
     </div>
 
     <div class="section section-narrow about colorwhite">
         <div class="info-section">
             <div class="info-section-image cover">
-                <amp-img alt="Boğaziçi Üniversitesi Teknoloji Zirvesi - Robotlarla yeniden tanış" src="assets/why.png"
-                    width="500" height="333" layout="responsive">
+                <amp-img src="assets/playitprogramstory.jpg"
+                    width="750" height="1334" layout="responsive">
                 </amp-img>
             </div>
             <div class="info-section-text">
@@ -1689,18 +1631,14 @@ amp-selector[role=tablist].tabs-with-flex {
                     <strong>Dijital oyun ve e-spor severleri bir araya getirecek olan PlayIT, son zamanların sevilen oyunlarının arkasındaki oyun şirketleri, oyun severlerin ilgiyle takip ettiği içerik siteleri, fenomen oyun yayıncıları ve e-spor dünyasının tanınan isimlerini katılımcılarla buluşturacak .
 
                         <br>
-                    <!-- <strong>İş İmkanları</strong> Pek çok şirket ve startup gelecekteki çalışanlarını arıyor <br>
-                    <strong>Üst Düzey Networking</strong> Sektörden kimselerle ve gelecekteki iş ortaklarınla tanış <br>
-                    <strong>Teknolojiyle Yeniden Tanış</strong> Yetkin kişilerden teknolojinin farklı alanlarını öğren
-                    <br>
-                    <strong>Deneyimle</strong> Yerinde gör, sorularını sor, her an yeni şeyler öğren -->
+                
                 </p>
             </div>
         </div>
         <div class="info-section info-section-reverse">
             <div class="info-section-image cover">
-                <amp-img alt="Boğaziçi Üniversitesi Teknoloji Zirvesi - Dijital Pazarlama Paneli" src="assets/what.png"
-                    width="500" height="333" layout="responsive">
+                <amp-img  src="assets/paylas.jpg"
+                    width="2160" height="2160" layout="responsive">
                 </amp-img>
             </div>
             <div class="info-section-text">
@@ -1708,446 +1646,28 @@ amp-selector[role=tablist].tabs-with-flex {
                 <p class="text-center">
                     
                         Oyun geliştirme teknikleri, algoritmadan koda geçiş, görsel ve arka plan tasarlama, Türkiye’de bağımsız oyun geliştiricisi olmak gibi konuşmalarla oyun geliştirme alanında kendini geliştirme ve merak ettiklerini öğrenme fırsatı,
-<!-- 
-Merlin'in Kazanı kurucusu Murat Oktay'ın online oyun dergisi oluşturma deneyimlerinden faydalanabileceğiniz söyleşi, -->
-<!-- 
-Geekyapar! ve Base42 ekibinden içerik üretme konusunda merak ettiğiniz noktaları öğrenebileceğiniz eğlenceli konuşmalar,
- -->
-<!-- E-spor panelimizde Space Soldiers Genel Koordinatörü Ahmed Çaylı ve 1907 Fenerbahçe Menajeri Emre Aksoy'la E-spor şirketi nasıl kurulur, nasıl işletilir, takım atmosferi ve turnuvalara hazırlık süreci gibi sorulara cevap bulacağınız ve Türkiye’de ve dünyada E-spor konusundaki son gelişmeleri öğrenebileceğiniz paneller, -->
-<!-- 
-Yorekok ve wtcNN ile Twitch ve Youtube’da nasıl içerik geliştirilir, başarılı olmanın yolları nedir konularında eğlenceli söyleşiler -->
+
 E-Spor Panelimiz
 ve çok daha fazlası!
 
-Biletini alıp yerini ayırtmak için: <br> <div class=" hero-button hero-button-ticket text-center" style="  margin-left: auto;
-margin-right: auto;text-align: center; margin:10px; padding:10px;">
+Biletini alıp yerini ayırtmak için: 
+
+<div class=" hero-button hero-button-ticket text-center">
     <a href="https://go.compec.org/playITkayit" class="">
-        <i class="fas fa-ticket-alt"></i> Biletini Al
+        <i class="fas fa-ticket-alt"></i> Bilet Al
     </a>
+  
+    
 </div>
 
 
                    
                 </p>
-                <!-- <p class="text-center">
-                    Paneller ve Konuşmalar <br>
-                
-                </p> -->
+               
             </div>
         </div>
 </strong>
 </div>
-<!-- burda emin
-
-
-        <div class="info-section">
-            <div class="info-section-image cover">
-                <amp-img alt="TechSummit'18 Digiturk Gezisi" src="assets/when.png" width="500" height="333"
-                    layout="responsive">
-                </amp-img>
-            </div>
-            <div class="info-section-text">
-                <h3>Ne Zaman?</h3>
-                <p>
-                    <strong>1-2-3 Mart tarihlerinde Boğaziçi Üniversitesi'nde</strong>
-                </p>
-                <p>
-                    <strong>1 Mart Cuma:</strong> Güney Meydan Albert Long Hall ve Şirket Gezileri (öğleden sonra) <br>
-                    <strong>2-3 Mart:</strong> Uçaksavar Kampüsü Garanti Kültür Merkezi
-                </p>
-            </div>
-        </div>
-        <div class="info-section info-section-reverse">
-            <div class="info-section-image cover">
-                <amp-img alt="Boğaziçi Üniversitesi Bilişim Kulübü" src="assets/who.jpg" width="500" height="375"
-                    layout="responsive">
-                </amp-img>
-            </div>
-            <div class="info-section-text">
-                <h3>Kim Düzenliyor?</h3>
-                <p><strong>
-                        Öğrenciler için, Öğrenciler tarafından
-                    </strong></p>
-                <p>
-                    Boğaziçi Üniversitesi Bilişim Kulübü'nde tamamen öğrencilerden oluşan TechSummit'19 ekibi tarafından
-                    düzenleniyor.
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="section info-container main-background clearfix">
-        <div class="overlay"></div>
-        <div class="info-tab green">
-            <span>20+</span>
-            <br> OTURUM
-        </div>
-        <div class="info-tab red">
-            <span>8+</span>
-            <br> WORKSHOP
-        </div>
-        <div class="info-tab logo">
-            <amp-img layout="responsive" width="1" height="1" src="assets/icons/android-icon-192x192.png"
-                alt="Techsummit Logo"></amp-img>
-        </div>
-        <div class="info-tab orange">
-            <span>8+</span>
-            <br> ŞİRKET GEZİSİ
-        </div>
-        <div class="info-tab blue">
-            <span>40+</span>
-            <br> ŞİRKET
-        </div>
-        <div class="bottom white-bottom"></div>
-        <div class="top"></div>
-    </div>
-
-    <div class="section section-narrow details-container">
-        <div class="detail-single detail-single-speak">
-            <div class="detail-single-text">
-                <h3>Panel ve Konuşmalar</h3>
-                <p>Sektörden ve akademi dünyasından kişiler, girişimciler, mühendisler farklı konularda deneyimlerini
-                    paylaşmak için Teknolojinin
-                    Zirvesinde... </p>
-                <a class="program-button" href="/program">
-                    <button>Program <i class="fas fa-arrow-right"></i> </button>
-                </a>
-            </div>
-            <div class="detail-single-carousel">
-                <amp-carousel height="300" layout="fixed-height" type="carousel">
-                    <div class="carousel-item image-single image-narrow carousel-cover">
-                        <amp-img src="../assets/details/speaks/cem_say.jpg" layout="fill" alt="Prof. Dr. Cem Say">
-                        </amp-img>
-                        <div class="carousel-title">
-                            <h4>
-                                Biz yaptık, bizden zeki çıktı
-                            </h4>
-                            <h5>
-                                Prof. Dr. Cem Say
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="carousel-item image-double image-narrow">
-                        <div class="image-double-item carousel-cover">
-                            <amp-img src="../assets/speakers/bager_akbay.jpg" layout="fill" alt="Bager Akbay"></amp-img>
-                            <div class="carousel-title">
-                                <h4>
-                                    Bager Akbay
-                                </h4>
-                                <h5>
-                                    Generative Artist
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="image-double-item carousel-cover">
-                            <amp-img src="../assets/speakers/ihsan_ozcitak.jpg" layout="fill" alt="İhsan Özçıtak">
-                            </amp-img>
-                            <div class="carousel-title">
-                                <h4>
-                                    İhsan Özçıtak
-                                </h4>
-                                <h5>
-                                    Deeper Yönetici Ortak
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item image-single image-wide carousel-cover">
-                        <amp-img src="../assets/details/speaks/digi_panel.jpg" layout="fill"
-                            alt="Serhat Tatlı, Yener Girişken, İhsan Özçıtak, Moris Kastro"></amp-img>
-                        <div class="carousel-title">
-                            <h4>
-                                Pazarlamanın Modern Yollarını Keşfet
-                            </h4>
-                            <h5>Serhat Tatlı, Yener Girişken, İhsan Özçıtak, Moris Kastro</h5>
-                        </div>
-                    </div>
-                    <div class="carousel-item image-double image-narrow">
-                        <div class="image-double-item carousel-cover">
-                            <amp-img src="../assets/speakers/ali-hantal.jpg" layout="fill" alt="Ali Hantal"></amp-img>
-                            <div class="carousel-title">
-                                <h4>
-                                    Ali Hantal
-                                </h4>
-                                <h5>
-                                    VR-Masters CEO
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="image-double-item carousel-cover">
-                            <amp-img src="../assets/details/speaks/mehmet-nalbantoglu.jpg" layout="fill"
-                                alt="Mehmet Nalbantoğlu"></amp-img>
-                            <div class="carousel-title">
-                                <h4>
-                                    Mehmet Nalbantoğlu
-                                </h4>
-                                <h5>
-                                    KoçSistem CEO (former)
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item image-single image-narrow carousel-cover">
-                        <amp-img src="../assets/details/speaks/facebook.jpg" layout="fill" alt="Erdem Çelik (Facebook)">
-                        </amp-img>
-                        <div class="carousel-title">
-                            <h4>
-                                Next Ten Years...
-                            </h4>
-                            <h5>
-                                Erdem Çelik (Facebook)
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="carousel-item image-single image-wide carousel-cover">
-                        <amp-img src="../assets/details/speaks/silicon_valley.jpg" layout="fill"
-                            alt="Levent Şapçı, Hale Dönertaşlı"></amp-img>
-                        <div class="carousel-title">
-                            <h4>
-                                Bir Ekosistemi Anlamak: Silikon Vadisi
-                            </h4>
-                            <h5>
-                                Levent Şapçı, Hale Dönertaşlı
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="carousel-item image-double image-narrow">
-                        <div class="image-double-item carousel-cover">
-                            <amp-img src="../assets/speakers/yener_girisken.jpg" layout="fill" alt="Yener Girişken">
-                            </amp-img>
-                            <div class="carousel-title">
-                                <h4>
-                                    Yener Girişken
-                                </h4>
-                                <h5>
-                                    ThinkNeuro CEO
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="image-double-item carousel-cover">
-                            <amp-img src="../assets/details/speaks/onur-erbay.jpg" layout="fill" alt="Onur Erbay">
-                            </amp-img>
-                            <div class="carousel-title">
-                                <h4>
-                                    Onur Erbay
-                                </h4>
-                                <h5>
-                                    Hopi CEO
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item image-single image-wide carousel-cover">
-                        <amp-img src="../assets/details/speaks/insider.jpg" layout="fill"
-                            alt="Muharrrem Derinkök (Insider)"></amp-img>
-                        <div class="carousel-title">
-                            <h4>
-                                Scaling Your Start-up Culture
-                            </h4>
-                            <h5>
-                                Muharrrem Derinkök (Insider)
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="carousel-item image-double image-narrow">
-                        <div class="image-double-item carousel-cover">
-                            <amp-img src="../assets/details/speaks/zehra-oney.jpg" layout="fill" alt="Zehra Öney">
-                            </amp-img>
-                            <div class="carousel-title">
-                                <h4>
-                                    Zehra Öney
-                                </h4>
-                                <h5>
-                                    Blippar CEO (former)
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="image-double-item carousel-cover">
-                            <amp-img src="../assets/details/speaks/yakup-bayrak.jpg" layout="fill" alt="Yakup Bayrak">
-                            </amp-img>
-                            <div class="carousel-title">
-                                <h4>
-                                    Yakup Bayrak
-                                </h4>
-                                <h5>
-                                    Sherpa Kurucu ve CEO
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item image-single image-narrow carousel-cover">
-                        <amp-img src="../assets/details/speaks/bager.jpg" layout="fill" alt="Bager Akbay"></amp-img>
-                        <div class="carousel-title">
-                            <h4>
-                                Yapay Zeka ve Yaratıcılık
-                            </h4>
-                            <h5>
-                                Bager Akbay - İskele47 Kurucu
-                            </h5>
-                        </div>
-                    </div>
-                </amp-carousel>
-            </div>
-        </div>
-
-        <div class="detail-single detail-single-workshop">
-            <div class="detail-single-text">
-                <h3>Workshoplar</h3>
-                <p>Farklı konuları derinlemesine işleyen sorularını sorabileceğin uygulayarak öğrenebileceğin
-                    workshoplar teknolojinin zirvesinde...</p>
-                <a class="program-button" href="/program">
-                    <button>Program <i class="fas fa-arrow-right"></i> </button>
-                </a>
-            </div>
-            <div class="detail-single-carousel">
-                <amp-carousel height="300" layout="fixed-height" type="carousel">
-                    <div class="carousel-item image-single image-narrow carousel-cover">
-                        <amp-img src="../assets/details/workshops/global_maksimum.jpg" layout="fill" alt="Glo">
-                        </amp-img>
-                        <div class="carousel-title">
-                            <h4>
-                                Global Maksimum
-                            </h4>
-                            <h5>
-                                Workflow Tutorial of a Machine Learning Project
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="carousel-item image-single image-wide carousel-cover">
-                        <amp-img src="../assets/details/workshops/mma_turkey.jpg" layout="fill"
-                            alt="Levent Şapçı, Hale Dönertaşlı"></amp-img>
-                        <div class="carousel-title">
-                            <h4>
-                                MMA Türkiye
-                            </h4>
-                            <h5>
-                                Reklamın İyisi Kötüsü Yoksa, Planlamanın Var
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="carousel-item image-single image-narrow carousel-cover">
-                        <amp-img src="../assets/details/workshops/huawei.jpg" layout="fill"
-                            alt="Scrum Simulation Workshop"></amp-img>
-                        <div class="carousel-title">
-                            <h4>
-                                Huawei Technologies
-                            </h4>
-                            <h5>Scrum Simulation Workshop</h5>
-                        </div>
-                    </div>
-                    <div class="carousel-item image-single image-wide carousel-cover">
-                        <amp-img src="../assets/details/workshops/insider.jpg" layout="fill" alt=""></amp-img>
-                        <div class="carousel-title">
-                            <h4>
-                                Insider
-                            </h4>
-                            <h5>
-                                Predicting Cancer Malignancy with Machine Learning
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="carousel-item image-single image-narrow carousel-cover">
-                        <amp-img src="../assets/details/workshops/vr_masters.jpg" layout="fill" alt="Gamelab İstanbul">
-                        </amp-img>
-                        <div class="carousel-title">
-                            <h4>
-                                VR Masters
-                            </h4>
-                            <h5>
-                                Kendini Aş, İlk AR Uygulamanı Geliştir
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="carousel-item image-single image-wide carousel-cover">
-                        <amp-img src="../assets/details/workshops/bannerofisi.jpg" layout="fill"
-                            alt="İnternet Reklamcılığına İlk Adımını At! İnteraktif bir Banner Hazırla"></amp-img>
-                        <div class="carousel-title">
-                            <h4>
-                                Bannerofisi
-                            </h4>
-                            <h5>
-                                İnternet Reklamcılığına İlk Adımını At! İnteraktif bir Banner Hazırla
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="carousel-item image-single image-narrow carousel-cover">
-                        <amp-img src="../assets/details/workshops/serkandogantekin.jpg" layout="fill"
-                            alt=" Blockchain 101: Implement it yourself!"></amp-img>
-                        <div class="carousel-title">
-                            <h4>
-                                Serkan Doğantekin
-                            </h4>
-                            <h5>
-                                Blockchain 101: Implement it yourself!
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="carousel-item image-single image-wide carousel-cover">
-                        <amp-img src="../assets/details/workshops/gamelab.jpg" layout="fill"
-                            alt="Game Engine Development 102: 2D Animations, 2d Transformations and Collision Detection">
-                        </amp-img>
-                        <div class="carousel-title">
-                            <h4>
-                                Gamelab İstanbul
-                            </h4>
-                            <h5>
-                                Game Engine Development 102: 2D Animations, 2d Transformations, Collision Detection
-                            </h5>
-                        </div>
-                    </div>
-                </amp-carousel>
-            </div>
-        </div>
- burda emin -->
-<!-- eeee -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2155,46 +1675,7 @@ margin-right: auto;text-align: center; margin:10px; padding:10px;">
     <h1 class="title-big text-center" style="color:white;">
         Program Akışı
     </h1>
-    <!-- <div class="tabs">
-        <amp-selector class="tabs-with-selector i-amphtml-element i-amphtml-layout-container i-amphtml-layout" role="tablist" on="select:myTabPanels.toggle(index=event.targetOption, value=true)" i-amphtml-layout="container">
-            <div id="sample3-tab1" role="tab" aria-controls="sample3-tabpanel1" option="0" aria-selected="false" tabindex="0">
-                    <div class="tabs-tab-item">
-                        1. Gün
-                        <br>
-                        <span class="tab-date">
-                            1 Mart Cuma
-                        </span>
-                    </div>
-            </div>
-            <div id="sample3-tab2" role="tab" aria-controls="sample3-tabpanel2" option="1" aria-selected="true" tabindex="0" selected="">
-                    <div class="tabs-tab-item">
-                        2. Gün
-                        <br>
-                        <span class="tab-date">
-                            2 Mart Cumartesi
-                        </span>
-                    </div>
-            </div>
-            <div id="sample3-tab3" role="tab" aria-controls="sample3-tabpanel3" option="2" aria-selected="false" tabindex="0">
-                    <div class="tabs-tab-item">
-                        3. Gün
-                        <br>
-                        <span class="tab-date">
-                            3 Mart Pazar
-                        </span>
-                    </div>
-            </div>
-        </amp-selector>
-
-        <amp-selector id="myTabPanels" class="tabpanels i-amphtml-element i-amphtml-layout-container i-amphtml-layout" i-amphtml-layout="container" role="listbox">-->
-            
-            
-            
-            <!-- burda altı program -->
-            
-
 <style >
-body{}
 
 
 .programback {
@@ -2206,15 +1687,8 @@ position: relative;
 filter: grayscale(50%);
 background-blend-mode: luminosity;
 
-
- 
 }
-
-
-
-
 </style>
-
 <div class="programback"  >
              
             <div id="sample3-tabpanel1" role="tabpanel" aria-labelledby="sample3-tab1" option="" aria-selected="false" tabindex="0"> 
@@ -2233,11 +1707,7 @@ background-blend-mode: luminosity;
                     </div>
                     <div class="item-container clearfix blue-bg-transparent">
                         <div class="visual-container">
-                            <!-- <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-layout" src="assets/visuals/speakers.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="assets/visuals/speakers.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
-                        
-
-                            <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-layout" src="assets/visuals/speakers.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="assets/visuals/speakers.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
-                        -->
+        
 
                         </div>
                         
@@ -2248,13 +1718,7 @@ background-blend-mode: luminosity;
                             <div class="title-container">
                                 Açılış Konuşması
                             </div>
-                            <!-- <div class="speakers-container">
-                                <ul class="speakers-list">
-                                    <li>
-                                        Servisler Boğaziçi Üniversitesi Güney Meydan'dan kalkacaktır.
-                                    </li>
-                                </ul>
-                            </div> -->
+                        
                         </div>
                     </div>
                     <div class="item-container clearfix blue-bg-transparent">
@@ -2266,12 +1730,12 @@ background-blend-mode: luminosity;
                                 <i class="fa fa-clock-o"></i> 10:00 - 10:30
                             </div>
                             <div class="title-container">
-                                Mobile Game Dev: Nar
+                                Step by Step: Developing a Mobile Game
                             </div>
                             <div class="speakers-container">
                                 <ul class="speakers-list">
                                     <li>
-                                        <i class="fas fa-user"></i> TBA
+                                        <i class="fas fa-user"></i> Metin Demirkol - Narcade
                                         
                                     </li>
                                 </ul>
@@ -2287,12 +1751,36 @@ background-blend-mode: luminosity;
                                 <i class="fa fa-clock-o"></i> 10:30 - 11:00
                             </div>
                             <div class="title-container">
-                                PC Game Dev: TaleWorlds
+                                Yayıncı Söyleşisi
                             </div>
                             <div class="speakers-container">
                                 <ul class="speakers-list">
                                     <li>
-                                        <i class="fas fa-user"></i> TBA
+                                        <i class="fas fa-user"></i> Dora Özsoy - Stratera
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-user"></i> Cem Ceyhan - Kozmik Karınca
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item-container clearfix blue-bg-transparent">
+                        <div class="visual-container">
+                            <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-layout" src="../assets/visuals/speaker.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="../assets/visuals/speaker.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
+                        </div>
+                        <div class="detail-container">
+                            <div class="time-container">
+                                <i class="fa fa-clock-o"></i> 11.00 - 11:30
+                            </div>
+                            <div class="title-container">
+                                Who am I? Pro/Cheater
+                            </div>
+                            <div class="speakers-container">
+                                <ul class="speakers-list">
+                                    <li>
+                                        <i class="fas fa-user"></i> Onurcan Yalçın - Noxart
                                     </li>
                                 </ul>
                             </div>
@@ -2305,10 +1793,10 @@ background-blend-mode: luminosity;
                         </div>
                         <div class="detail-container">
                             <div class="time-container">
-                                <i class="fa fa-clock-o"></i> 11:00 - 11:30
+                                <i class="fa fa-clock-o"></i> 11:30 - 11:45
                             </div>
                             <div class="title-container">
-                                Kahve Molası
+                                Mola
                             </div>
                         </div>
                     </div>
@@ -2321,19 +1809,14 @@ background-blend-mode: luminosity;
                         </div>
                         <div class="detail-container">
                             <div class="time-container">
-                                <i class="fa fa-clock-o"></i> 11:30 - 12:30
+                                <i class="fa fa-clock-o"></i> 11:45 - 12:45
                             </div>
                             <div class="title-container">
-                                Espor Paneli
+                              Espor Takımı Nasıl Kurulur?
                             </div>
                             <div class="speakers-container">
                                 <ul class="speakers-list">
-                                    <li>
-                                        <i class="fas fa-user"></i>
-
-                                    Fenerbahçe
-
-                                    </li>
+                                
                                     <li>
                                         <i class="fas fa-user"></i>
 
@@ -2357,29 +1840,26 @@ background-blend-mode: luminosity;
                         </div>
                         <div class="detail-container">
                             <div class="time-container">
-                                <i class="fa fa-clock-o"></i> 12:30 - 13:00
+                                <i class="fa fa-clock-o"></i> 12:45 - 13.15
                             </div>
                             <div class="title-container">
-                                Yayıncı Oturumu         
+                                Yayıncı Söyleşisi    
                             </div>
                             <div class="speakers-container">
                                 <ul class="speakers-list">
                                     <li>
                                         <i class="fas fa-user"></i> 
-                                        Unlost
+                                        Cantuğ Özsoy - Unlost
                                     </li>
                                     <li>
                                         <i class="fas fa-user"></i> 
-                                        thetabeta
+                                        İpek İnan & Berkant Cen - Thetabetaplays
                                     </li>
                                     <li>
                                         <i class="fas fa-user"></i> 
-                                        zeonn
+                                        Necati Akçay - Zeonn
                                     </li>
-                                    <!-- <li>
-                                        <i class="fas fa-user"></i> 
-                                        
-                                    </li> -->
+                                  
                                 </ul>
                             </div>
                         </div>
@@ -2392,10 +1872,10 @@ background-blend-mode: luminosity;
                         </div>
                         <div class="detail-container">
                             <div class="time-container">
-                                <i class="fa fa-clock-o"></i> 13:00 - 13:30
+                                <i class="fa fa-clock-o"></i> 13:15 - 13:45
                             </div>
                             <div class="title-container">
-                                Kahve Molası
+                                Öğle Yemeği
                             </div>
                         </div>
                     </div>
@@ -2406,23 +1886,12 @@ background-blend-mode: luminosity;
                         </div>
                         <div class="detail-container">
                             <div class="time-container">
-                                <i class="fa fa-clock-o"></i> 13:30 - 14:00
+                                <i class="fa fa-clock-o"></i> 13:45 - 14:15
                             </div>
                             <div class="title-container">
-                            TBA 
+                            Yayıncı Söyleşisi 
                             </div>
                             
-                            <!-- <li>
-                                <i class="fas fa-user"></i> 
-                                
-                            </li>
-                            <li>
-                                <i class="fas fa-user"></i> 
-                                
-                            </li> -->
-
-
-
                             <div class="speakers-container"> <ul class="speakers-list">
                                 <li>
                                 <i class="fas fa-user"></i> 
@@ -2448,7 +1917,7 @@ background-blend-mode: luminosity;
                                 <i class="fa fa-clock-o"></i> 14:15 - 15:00
                             </div>
                             <div class="title-container">
-                                TBA
+                                Kaliteli İçerik Üretimi
                             </div>
                             
                             
@@ -2457,20 +1926,17 @@ background-blend-mode: luminosity;
                                 <ul class="speakers-list">
                                         <li>
                                                 <i class="fas fa-user"></i> 
-                                                Multiplayer
+                                               Tunca Arslan - Multiplayer
                                             </li>
                                             <li>
                                                 <i class="fas fa-user"></i> 
-                                                Merlin'in Kazanı
+                                                Orhun Kayaalp  - Multiplayer
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-user"></i> 
+                                         Murat Oktay - Merlin'in Kazanı
                                              </li>
-                                             <!-- <li> 
-                                                    <i class="fas fa-user"></i> 
-                                                    
-                                                </li>
-                                                <li>
-                                                    <i class="fas fa-user"></i> 
-                                                    
-                                                </li> -->
+                                            
                                 </ul>
                             </div>
                         </div>
@@ -2482,36 +1948,30 @@ background-blend-mode: luminosity;
                         </div>
                         <div class="detail-container">
                             <div class="time-container">
-                                <i class="fa fa-clock-o"></i> 15:00 - 15:30
+                                <i class="fa fa-clock-o"></i> 15:00 - 16.00
                             </div>
                             <div class="title-container">
-                                Noxart 
+                                Oyun Dünyasında Neler Oluyor 
                             </div>
-                            <!-- <div class="speakers-container">
+                            <div class="speakers-container">
                                 <ul class="speakers-list">
                                     <li>
-                                        <i class="fas fa-user"></i> Cavit Yantaç -
-                                        Yazılım Geliştirme Teknolojileri Genel Müdür Yardımcısı<span> Microsoft Turkey</span>
-                                    </li>
+                                        <i class="fas fa-user"></i> Ali Erkin - TaleWorlds </li>
+
+                                    <li>
+                                        <i class="fas fa-user"></i> Barış Emek Kepenek - ODTÜ Teknokent </li>
+
+                                    <li>
+                                        <i class="fas fa-user"></i> Evren Emre - Sanlab </li>
+
+                                        <li>
+                                            <i class="fas fa-user"></i> Evren Gülçığ - Tiramisu </li>
                                 </ul>
-                            </div> -->
-                        </div>
-                    </div>
-
-                    <div class="item-container clearfix red-bg-transparent">
-                        <div class="visual-container">
-                            <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-layout" src="../assets/visuals/kahve.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="../assets/visuals/kahve.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
-                        </div>
-                        <div class="detail-container">
-                            <div class="time-container">
-                                <i class="fa fa-clock-o"></i> 15:30 - 16:00
-                            </div>
-                            <div class="title-container">
-                                Kahve Molası
                             </div>
                         </div>
                     </div>
 
+                 
                     <div class="item-container clearfix blue-bg-transparent">
                         <div class="visual-container">
                             <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-layout" 
@@ -2523,17 +1983,17 @@ background-blend-mode: luminosity;
                                 <i class="fa fa-clock-o"></i> 16:00 - 16:30
                             </div>
                             <div class="title-container">
-                            TBA
+                            Yayıncı Söyleşisi
                             </div>
                             <div class="speakers-container">
                                 <ul class="speakers-list">
                                     <li>
                                         <i class="fas fa-user"></i> 
-                                        Ruthless ladies
+                                        Nur Ergezer & İrem Öz - Ruthless Ladies
                                     </li>
                                     <li>
                                             <i class="fas fa-user"></i> 
-                                            Videoyun
+                                            Batu Bozkan - Videoyun
                                         </li>
                                 
                                 
@@ -2543,1365 +2003,9 @@ background-blend-mode: luminosity;
                         </div>
                     </div>
 
-                    <div class="item-container clearfix blue-bg-transparent">
-                        <div class="visual-container">
-                            <amp-img layout="responsive" width="1" height="1" 
-                            class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-layout" 
-                            src="../assets/visuals/speaker.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" 
-                            src="../assets/visuals/speaker.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
-                        </div>
-                        <div class="detail-container">
-                            <div class="time-container">
-                                <i class="fa fa-clock-o"></i> 16:30 - 17:00
-                            </div>
-                            <div class="title-container">
-                                TBA
-                            </div>
-                            <div class="speakers-container">
-                                <ul class="speakers-list">
-                                        <li>
-                                                <i class="fas fa-user"></i> 
-                                                Stratera
-                                            </li>
-                                            <li>
-                                                    <i class="fas fa-user"></i> 
-                                                    Kozmik Karınca
-                                                </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 
-                    
-                    <div class="item-container clearfix blue-bg-transparent">
-                        <div class="visual-container">
-                            <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-layout" src="../assets/visuals/panel.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="../assets/visuals/panel.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
-                        </div>
-                        <div class="detail-container">
-                            <div class="time-container">
-                                <i class="fa fa-clock-o"></i> 11:30 - 12:30
-                            </div>
-                            <div class="title-container">
-                                Panel: Marka Değeri Açısından Teknoloji
-                            </div>
-                            <div class="speakers-container">
-                                <ul class="speakers-list">
-                                    <li>
-                                        <i class="fas fa-user"></i> Ayşe Ketenci -
-                                        Media Senior Manager, Vodafone
-                                    </li>
-                                    <li>
-                                        <i class="fas fa-user"></i> Beyza Murat -
-                                        Business &amp; Digital Director, Mindshare
-                                    </li>
-                                    <li>
-                                        <i class="fas fa-user"></i> Evin Peştereli -
-                                        Head of Interaction, Mindshare
-                                    </li>
-                                    <li>
-                                        <i class="fas fa-user"></i> Kerim Kaya - CEO, Vircon Group
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-container clearfix red-bg-transparent">
-                        <div class="visual-container">
-                            <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-layout" src="../assets/visuals/yemek.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="../assets/visuals/yemek.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
-                        </div>
-                        <div class="detail-container">
-                            <div class="time-container">
-                                <i class="fa fa-clock-o"></i> 12:45 - 13:30
-                            </div>
-                            <div class="title-container">
-                                Öğle Yemeği
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-container clearfix blue-bg-transparent">
-                        <div class="visual-container">
-                            <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-layout" src="../assets/visuals/megafon.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="../assets/visuals/megafon.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
-                        </div>
-                        <div class="detail-container">
-                            <div class="time-container">
-                                <i class="fa fa-clock-o"></i> 13:30 - 14:00
-                            </div>
-                            <div class="title-container">
-                                Servislere Yerleşme
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-container clearfix blue-bg-transparent">
-                        <div class="visual-container">
-                            <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-layout" src="../assets/visuals/bus_transparent.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="../assets/visuals/bus_transparent.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
-                        </div>
-                        <div class="detail-container">
-                            <div class="time-container">
-                                <i class="fa fa-clock-o"></i> 14:00
-                            </div>
-                            <div class="title-container">
-                                Servis Kalkışı
-                            </div>
-                            <div class="speakers-container">
-                                <ul class="speakers-list">
-                                    <li>
-                                        Servisler Boğaziçi Üniversitesi Güney Meydan'dan kalkacaktır.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-container clearfix orange-bg-transparent">
-                        <div class="visual-container">
-                            <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-layout" src="../assets/visuals/sirket.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="../assets/visuals/sirket.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
-                        </div>
-                        <div class="detail-container">
-                            <div class="time-container">
-                                <i class="fa fa-clock-o"></i> 14:30 - 16:30
-                            </div>
-                            <div class="title-container">
-                                Şirket Gezileri
-                            </div>
-                            <div class="speakers-container">
-                                <ul class="speakers-list">
-                                    <li>
-                                        ING Bank, Sestek, Insider, Yemek Sepeti, Microsoft, Vodafone, Iyzico, Teknasyon, Solvoyo, Amazon Web Services, Commencis, Turk Telekom, 3Dörtgen
-                                    </li>
-                                </ul>
-                            </div>
-                        </div> 
-                     </div> -->
             </div>
 
- <!-- burda altı program -->
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <!-- <div id="sample3-tabpanel2" role="tabpanel" aria-labelledby="sample3-tab2" option="" aria-selected="true" tabindex="0" selected="">
-                <div class="item-container clearfix red-bg-transparent">
-                    <div class="visual-container">
-                        <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-layout" src="../assets/visuals/kahve.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="../assets/visuals/kahve.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
-                    </div>
-                    <div class="detail-container">
-                        <div class="time-container">
-                            <i class="fa fa-clock-o"></i> 10:00 - 17:00
-                        </div>
-                        <div class="title-container">
-                            Fuaye Alanı
-                        </div>
-                        <div class="speakers-container">
-                            <ul class="speakers-list">
-                                <li>
-                                    <i class="fas fa-star-of-life"></i> Promobot (İnsansı Robot)
-                                </li>
-                            </ul>
-                            <ul class="speakers-list">
-                                <li>
-                                    <i class="fas fa-star-of-life"></i> Poligon Mühendislik (3D Printer)
-                                </li>
-                            </ul>
-                            <ul class="speakers-list">
-                                <li>
-                                    <i class="fas fa-star-of-life"></i> TechDroneLeague (Drone Technologies)
-                                </li>
-                            </ul>
-                            <ul class="speakers-list">
-                                <li>
-                                    <i class="fas fa-star-of-life"></i> HangaarLab (Epson, Vuzix ve Real Wear)
-                                </li>
-                            </ul>
-                            <ul class="speakers-list">
-                                <li>
-                                    <i class="fas fa-star-of-life"></i> Universal Robots (Endüstriyel Robotlar)
-                                </li>
-                            </ul>
-                            <ul class="speakers-list">
-                                <li>
-                                    <i class="fas fa-star-of-life"></i> Microsoft (XBox Deneyim Alanı)
-                                </li>
-                            </ul>
-                            <ul class="speakers-list">
-                                <li>
-                                    <i class="fas fa-star-of-life"></i> Intenseye (Görüntü İşleme)
-                                </li>
-                            </ul>
-                            <ul class="speakers-list">
-                                <li>
-                                    <i class="fas fa-star-of-life"></i> Şirket Stantları (ING Bank, Insider, Getir, Teknasyon, Sestek, Solvoyo)
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-container clearfix blue-bg-transparent">
-                    <div class="visual-container">
-                        <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-layout" src="../assets/visuals/register.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="../assets/visuals/register.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
-                    </div>
-                    <div class="detail-container">
-                        <div class="time-container">
-                            <i class="fa fa-clock-o"></i> 09:00 - 10:00
-                        </div>
-                        <div class="title-container">
-                            Kayıt
-                        </div>
-                    </div>
-                </div>
-                <div class="item-container clearfix blue-bg-transparent">
-                    <div class="visual-container">
-                        <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-layout" src="../assets/visuals/speaker.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="../assets/visuals/speaker.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
-                    </div>
-                    <div class="detail-container">
-                        <div class="time-container">
-                            <i class="fa fa-clock-o"></i> 10:00 - 10:20
-                        </div>
-                        <div class="title-container">
-                            Turkey's Cyber Intelligence and Threat Analysis
-                        </div>
-                        <div class="speakers-container">
-                            <ul class="speakers-list">
-                                <li>
-                                    <i class="fas fa-user"></i> Mustafa Altınkaynak - Kıdemli Uzman
-                                    <span>Türkiye Emlak Katılım Bankası A.Ş.</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-container clearfix blue-bg-transparent">
-                    <div class="visual-container">
-                        <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-layout" src="../assets/visuals/speaker.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="../assets/visuals/speaker.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
-                    </div>
-                    <div class="detail-container">
-                        <div class="time-container">
-                            <i class="fa fa-clock-o"></i> 10:20 - 10:35
-                        </div>
-                        <div class="title-container">
-                            The 3D Transformation in Industry 4.0
-                        </div>
-                        <div class="speakers-container">
-                            <ul class="speakers-list">
-                                <li>
-                                    <i class="fas fa-user"></i> Okan Sami Nahit - Founding Partner, Finance Manager,
-                                    <span>Poligon Mühendislik</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-container clearfix red-bg-transparent">
-                    <div class="visual-container">
-                        <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-layout" src="../assets/visuals/kahve.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="../assets/visuals/kahve.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
-                    </div>
-                    <div class="detail-container">
-                        <div class="time-container">
-                            <i class="fa fa-clock-o"></i> 10:35 - 11:00
-                        </div>
-                        <div class="title-container">
-                            Mola
-                        </div>
-                    </div>
-                </div>
-                <div class="item-container clearfix blue-bg-transparent">
-                    <div class="visual-container">
-                        <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-layout" src="../assets/visuals/speaker.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="../assets/visuals/speaker.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
-                    </div>
-                    <div class="detail-container">
-                        <div class="time-container">
-                            <i class="fa fa-clock-o"></i> 11:00 - 11:30
-                        </div>
-                        <div class="title-container">
-                            Microservices, Docker and Serverless
-                        </div>
-                        <div class="speakers-container">
-                            <ul class="speakers-list">
-                                <li>
-                                    <i class="fas fa-user"></i> Ufuk Dağ - Lead DevOps Engineer,
-                                    <span>Getir</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-container clearfix blue-bg-transparent">
-                    <div class="visual-container">
-                        <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-layout" src="../assets/visuals/speaker.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="../assets/visuals/speaker.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
-                    </div>
-                    <div class="detail-container">
-                        <div class="time-container">
-                            <i class="fa fa-clock-o"></i> 11:30 - 11:50
-                        </div>
-                        <div class="title-container">
-                            Latteniz Sütsüz
-                            Olsun Mu?
-                        </div>
-                        <div class="speakers-container">
-                            <ul class="speakers-list">
-                                <li>
-                                    <i class="fas fa-user"></i> Erol Beynam - VP of Engineering,
-                                    <span>Solvoyo</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-container clearfix blue-bg-transparent">
-                    <div class="visual-container">
-                        <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-layout" src="../assets/visuals/speaker.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="../assets/visuals/speaker.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
-                    </div>
-                    <div class="detail-container">
-                        <div class="time-container">
-                            <i class="fa fa-clock-o"></i> 11:50 - 12:05
-                        </div>
-                        <div class="title-container">
-                            V-Sight: Artırılmış Gerçeklik ile Dijital Fabrikalar
-                        </div>
-                        <div class="speakers-container">
-                            <ul class="speakers-list">
-                                <li>
-                                    <i class="fas fa-user"></i> Cihat Kahraman - Co founder, <span>HangaarLab</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-container clearfix red-bg-transparent">
-                    <div class="visual-container">
-                        <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-layout" src="../assets/visuals/yemek.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="../assets/visuals/yemek.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
-                    </div>
-                    <div class="detail-container">
-                        <div class="time-container">
-                            <i class="fa fa-clock-o"></i> 12:05 - 12:50
-                        </div>
-                        <div class="title-container">
-                            Öğle Yemeği
-                        </div>
-                    </div>
-                </div>
-                <div class="item-container clearfix blue-bg-transparent">
-                    <div class="visual-container">
-                        <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-layout" src="../assets/visuals/speaker.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="../assets/visuals/speaker.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
-                    </div>
-                    <div class="detail-container">
-                        <div class="time-container">
-                            <i class="fa fa-clock-o"></i> 12:50 - 13:20
-                        </div>
-                        <div class="title-container">
-                            Yapay Zeka ile Ses ve Dil İşleme
-                        </div>
-                        <div class="speakers-container">
-                            <ul class="speakers-list">
-                                <li>
-                                    <i class="fas fa-user"></i> Çağatay YURDASAL - ND PMO Ekip Lideri,
-                                    <span>Sestek</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-container clearfix blue-bg-transparent">
-                    <div class="visual-container">
-                        <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-layout" src="../assets/visuals/speaker.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="../assets/visuals/speaker.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
-                    </div>
-                    <div class="detail-container">
-                        <div class="time-container">
-                            <i class="fa fa-clock-o"></i> 13:20 - 13:50
-                        </div>
-                        <div class="title-container">
-                            Milyon Kullanıcılı Global Uygulama Nasıl Yapılır?
-                        </div>
-                        <div class="speakers-container">
-                            <ul class="speakers-list">
-                                <li>
-                                    <i class="fas fa-user"></i> Fatih Üstündağ - CTO,
-                                    <span>Teknasyon</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-container clearfix red-bg-transparent">
-                    <div class="visual-container">
-                        <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-layout" src="../assets/visuals/kahve.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="../assets/visuals/kahve.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
-                    </div>
-                    <div class="detail-container">
-                        <div class="time-container">
-                            <i class="fa fa-clock-o"></i> 13:50 - 14:05
-                        </div>
-                        <div class="title-container">
-                            Mola
-                        </div>
-                    </div>
-                </div>
-                <div class="item-container clearfix blue-bg-transparent">
-                    <div class="visual-container">
-                        <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-layout" src="../assets/visuals/panel.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="../assets/visuals/panel.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
-                    </div>
-                    <div class="detail-container">
-                        <div class="time-container">
-                            <i class="fa fa-clock-o"></i> 14:05 - 15:05
-                        </div>
-                        <div class="title-container">
-                            Panel: Yapay Zeka ve Trendler
-                        </div>
-                        <div class="speakers-container">
-                            <ul class="speakers-list">
-                                <li>
-                                    <i class="fas fa-user"></i> <strong>Moderatör:</strong> Şadi Evren Şeker -
-                                    <span>OptiWisdom şirketinde Founder&amp;CEO</span>
-                                </li>
-                                <li>
-                                    <i class="fas fa-user"></i> Zekeriya Beşiroğlu -
-                                    <span>Lead Architect, Big Data &amp; Analytics at KOMTAŞ Bilgi Yönetimi</span>
-                                </li>
-                                <li>
-                                    <i class="fas fa-user"></i> Batuhan Köse -
-                                    <span>Data Analyst at Turkcell</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-container clearfix green-bg-transparent">
-                    <div class="visual-container">
-                        <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-layout" src="../assets/visuals/speaker.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="../assets/visuals/speaker.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
-                    </div>
-                    <div class="detail-container">
-                        <div class="time-container">
-                            <i class="fa fa-clock-o"></i> 15:15 - 17:15
-                        </div>
-                        <div class="title-container">
-                           Workshoplar (x4)
-                        </div>
-                    </div>
-                </div>
-                <div class="item-container clearfix green-bg-transparent">
-                    <div class="visual-container">
-                        <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-layout" src="../assets/visuals/speaker.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="../assets/visuals/speaker.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
-                    </div>
-                    <div class="detail-container">
-                        <div class="time-container">
-                            <i class="fa fa-clock-o"></i> 15:15 - 17:15
-                        </div>
-                        <div class="title-container">
-                            Türk Telekom Akıllı Şehir Uygulamaları ve Şehir Yönetim Platformu
-                        </div>
-                        <div class="speakers-container">
-                            <ul class="speakers-list">
-                                <li>
-                                    <i class="fas fa-user"></i>
-                                    Mehtap Arzu Can -
-                                    Özel Çözümler Müdürü, Türk Telekom
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-container clearfix green-bg-transparent">
-                    <div class="visual-container">
-                        <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-layout" src="../assets/visuals/speaker.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="../assets/visuals/speaker.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
-                    </div>
-                    <div class="detail-container">
-                        <div class="time-container">
-                            <i class="fa fa-clock-o"></i> 15:15 - 17:15
-                        </div>
-                        <div class="title-container">
-                            Unity ile Arttırılmış Gerceklik Uygulaması Yazılımı
-                        </div>
-                        <div class="speakers-container">
-                            <ul class="speakers-list">
-                                <li>
-                                    <i class="fas fa-user"></i>
-                                    VR-Masters
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-container clearfix green-bg-transparent">
-                    <div class="visual-container">
-                        <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-layout" src="../assets/visuals/speaker.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="../assets/visuals/speaker.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
-                    </div>
-                    <div class="detail-container">
-                        <div class="time-container">
-                            <i class="fa fa-clock-o"></i> 15:15 - 17:15
-                        </div>
-                        <div class="title-container">
-                            Open Source Teknolojileri Kullanarak Hızlı Ve Kaliteli Mobil Uygulama Nasıl Geliştirilir?
-                        </div>
-                        <div class="speakers-container">
-                            <ul class="speakers-list">
-                                <li>
-                                    <i class="fas fa-user"></i>Fatih Üstündağ - CTO, Teknasyon
-                                </li>
-                                <li>
-                                    <i class="fas fa-user"></i>Doğan Aydın - CTO, Teknasyon
-                                </li>
-                                <li>
-                                    <i class="fas fa-user"></i>Doğan Özmen - Android Developer, Teknasyon
-                                </li>
-                                <li>
-                                    <i class="fas fa-user"></i>Can Koç - iOS Developer, Teknasyon
-                                </li>
-                                <li>
-                                    <i class="fas fa-user"></i>Ömer Albeik  - iOS Developer, Teknasyon
-                                </li>
-                                <li>
-                                    <i class="fas fa-user"></i>Buğrahan Taşdan - iOS Developer, Teknasyon
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="item-container clearfix green-bg-transparent">
-                    <div class="visual-container">
-                        <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-layout" src="../assets/visuals/speaker.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer><img decoding="async" alt="" src="../assets/visuals/speaker.png" class="i-amphtml-fill-content i-amphtml-replaced-content"></amp-img>
-                    </div>
-                    <div class="detail-container">
-                        <div class="time-container">
-                            <i class="fa fa-clock-o"></i> 15:15 - 17:15
-                        </div>
-                        <div class="title-container">
-                            Chatbot Development-101: Building A Conversational AI Bot with Sestek
-                        </div>
-                        <div class="speakers-container">
-                            <ul class="speakers-list">
-                                <li>
-                                    <i class="fas fa-user"></i>İbrahim ONAT- IVR Web Development Ekip Lideri,
-                                    <span>Sestek</span>
-                                </li>
-                                <li>
-                                    <i class="fas fa-user"></i>İMustafa ERDEN - VOICE R&amp;D Ekip Lideri,
-                                    <span>Sestek</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div id="sample3-tabpanel3" role="tabpanel" aria-labelledby="sample3-tab3" option="" aria-selected="false" tabindex="0">
-                <div class="item-container clearfix red-bg-transparent">
-                    <div class="visual-container">
-                        <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined" src="../assets/visuals/kahve.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer></amp-img>
-                    </div>
-                    <div class="detail-container">
-                        <div class="time-container">
-                            <i class="fa fa-clock-o"></i> 10:00 - 17:00
-                        </div>
-                        <div class="title-container">
-                            Fuaye Alanı
-                        </div>
-                        <div class="speakers-container">
-                            <ul class="speakers-list">
-                                <li>
-                                    <i class="fas fa-star-of-life"></i> Promobot (İnsansı Robot)
-                                </li>
-                            </ul>
-                            <ul class="speakers-list">
-                                <li>
-                                    <i class="fas fa-star-of-life"></i> TechDroneLeague (Drone Technologies)
-                                </li>
-                            </ul>
-                            <ul class="speakers-list">
-                                <li>
-                                    <i class="fas fa-star-of-life"></i> HangaarLab (Epson, Vuzix ve Real Wear)
-                                </li>
-                            </ul>
-                            <ul class="speakers-list">
-                                <li>
-                                    <i class="fas fa-star-of-life"></i> Universal Robots (Endüstriyel Robotlar)
-                                </li>
-                            </ul>
-                            <ul class="speakers-list">
-                                <li>
-                                    <i class="fas fa-star-of-life"></i> Microsoft (XBox Deneyim Alanı)
-                                </li>
-                            </ul>
-                            <ul class="speakers-list">
-                                <li>
-                                    <i class="fas fa-star-of-life"></i> Intenseye (Görüntü İşleme)
-                                </li>
-                            </ul>
-                            <ul class="speakers-list">
-                                <li>
-                                    <i class="fas fa-star-of-life"></i> Şirket Stantları (Insider, Getir, Teknasyon, Sestek, Solvoyo)
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-container clearfix blue-bg-transparent">
-                    <div class="visual-container">
-                        <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined" src="../assets/visuals/register.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer></amp-img>
-                    </div>
-                    <div class="detail-container">
-                        <div class="time-container">
-                            <i class="fa fa-clock-o"></i> 09:15 - 10:15
-                        </div>
-                        <div class="title-container">
-                            Kayıt
-                        </div>
-                    </div>
-                </div>
-
-                                        <div class="item-container clearfix blue-bg-transparent">
-                                            <div class="visual-container">
-                                                <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined" src="../assets/visuals/speaker.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer></amp-img>
-                                            </div>
-                                            <div class="detail-container">
-                                                <div class="time-container">
-                                                    <i class="fa fa-clock-o"></i> 10:15 - 10:35
-                                                </div>
-                                                <div class="title-container">
-                                                    Bankayız ve Başkayız
-                                                </div>
-                                                <div class="speakers-container">
-                                                    <ul class="speakers-list">
-                                                        <li>
-                                                            <i class="fas fa-user"></i> Müjde Erdoğan -
-                                                            İşe Alım Bölüm Müdürü, ING Bank
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item-container clearfix blue-bg-transparent">
-                                            <div class="visual-container">
-                                                <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined" src="../assets/visuals/speaker.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer></amp-img>
-                                            </div>
-                                            <div class="detail-container">
-                                                <div class="time-container">
-                                                    <i class="fa fa-clock-o"></i> 10:35 - 10:55
-                                                </div>
-                                                <div class="title-container">
-                                                     Havacılık ve Uzayda Gelecek
-                                                </div>
-                                                <div class="speakers-container">
-                                                    <ul class="speakers-list">
-                                                        <li>
-                                                            <i class="fas fa-user"></i> Arda Mevlütoğlu <br>
-                                                            <span>Consultant, Aerospace &amp; Defence Industry, Gelecek Araştırmaları Enstitüsü</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item-container clearfix blue-bg-transparent">
-                                            <div class="visual-container">
-                                                <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined" src="../assets/visuals/speaker.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer></amp-img>
-                                            </div>
-                                            <div class="detail-container">
-                                                <div class="time-container">
-                                                    <i class="fa fa-clock-o"></i> 10:55 - 11:10
-                                                </div>
-                                                <div class="title-container">
-                                                    İş Birlikçi Robotlar
-                                                </div>
-                                                <div class="speakers-container">
-                                                    <ul class="speakers-list">
-                                                        <li>
-                                                            <i class="fas fa-user"></i> Ufuk Günhan <br>
-                                                            <span>Robtek Universal Robots - Satış Pazarlama</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item-container clearfix red-bg-transparent">
-                                            <div class="visual-container">
-                                                <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined" src="../assets/visuals/kahve.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer></amp-img>
-                                            </div>
-                                            <div class="detail-container">
-                                                <div class="time-container">
-                                                    <i class="fa fa-clock-o"></i> 11:10 - 11:40
-                                                </div>
-                                                <div class="title-container">
-                                                    Mola
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item-container clearfix blue-bg-transparent">
-                                            <div class="visual-container">
-                                                <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined" src="../assets/visuals/speaker.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer></amp-img>
-                                            </div>
-                                            <div class="detail-container">
-                                                <div class="time-container">
-                                                    <i class="fa fa-clock-o"></i> 11:40 - 12:10
-                                                </div>
-                                                <div class="title-container">
-                                                     Yazılımın Geleceğine Dair 5 Öngörü
-                                                </div>
-                                                <div class="speakers-container">
-                                                    <ul class="speakers-list">
-                                                        <li>
-                                                            <i class="fas fa-user"></i> Dr. Hakan Mutlu Sönmez -
-                                                            <span>Lead Product Manager, Insider</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item-container clearfix blue-bg-transparent">
-                                            <div class="visual-container">
-                                                <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined" src="../assets/visuals/speaker.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer></amp-img>
-                                            </div>
-                                            <div class="detail-container">
-                                                <div class="time-container">
-                                                    <i class="fa fa-clock-o"></i> 12:10 - 12:40
-                                                </div>
-                                                <div class="title-container">
-                                                    Drone Technology
-                                                </div>
-                                                <div class="speakers-container">
-                                                    <ul class="speakers-list">
-                                                        <li>
-                                                            <i class="fas fa-user"></i> Tech Drone League
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item-container clearfix red-bg-transparent">
-                                            <div class="visual-container">
-                                                <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined" src="../assets/visuals/yemek.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer></amp-img>
-                                            </div>
-                                            <div class="detail-container">
-                                                <div class="time-container">
-                                                    <i class="fa fa-clock-o"></i> 12:40 - 13:30
-                                                </div>
-                                                <div class="title-container">
-                                                    Öğle Yemeği
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item-container clearfix blue-bg-transparent">
-                                            <div class="visual-container">
-                                                <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined" src="../assets/visuals/speaker.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer></amp-img>
-                                            </div>
-                                            <div class="detail-container">
-                                                <div class="time-container">
-                                                    <i class="fa fa-clock-o"></i> 13:30 - 14:00
-                                                </div>
-                                                <div class="title-container">
-                                                    Influencer Aslında Kim?
-                                                </div>
-                                                <div class="speakers-container">
-                                                    <ul class="speakers-list">
-                                                        <li>
-                                                            <i class="fas fa-user"></i> Pelin Olgun - Sunucu
-                                                            <span>Vibio</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item-container clearfix blue-bg-transparent">
-                                            <div class="visual-container">
-                                                <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined" src="../assets/visuals/panel.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer></amp-img>
-                                            </div>
-                                            <div class="detail-container">
-                                                <div class="time-container">
-                                                    <i class="fa fa-clock-o"></i> 14:00 - 15:00
-                                                </div>
-                                                <div class="title-container">
-                                                    Panel: High Tech Startups in Turkey
-                                                </div>
-                                                <div class="speakers-container">
-                                                    <ul class="speakers-list">
-                                                        <li>
-                                                            <i class="fas fa-user"></i> Moderatör: Hilmi Öğütücü - egirişim Founder
-                                                        </li>
-                                                        <li>
-                                                            <i class="fas fa-user"></i> Sercan Esen - Intenseye Cofounder
-                                                        </li>
-                                                        <li>
-                                                            <i class="fas fa-user"></i> Erdem Tatlı - Aiborne Cofounder
-                                                        </li>
-                                                        <li>
-                                                            <i class="fas fa-user"></i> Samet Doğan - Reminis Cofounder
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="item-container clearfix green-bg-transparent">
-                                            <div class="visual-container">
-                                                <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined" src="../assets/visuals/speaker.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer></amp-img>
-                                            </div>
-                                            <div class="detail-container">
-                                                <div class="time-container">
-                                                    <i class="fa fa-clock-o"></i> 15:15 - 17:15
-                                                </div>
-                                                <div class="title-container">
-                                                    Workshoplar (x4)
-                                                </div>
-                                            </div>
-                                        </div>
-                <div class="item-container clearfix green-bg-transparent">
-                    <div class="visual-container">
-                        <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined" src="../assets/visuals/speaker.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer></amp-img>
-                    </div>
-                    <div class="detail-container">
-                        <div class="time-container">
-                            <i class="fa fa-clock-o"></i> 15:15 - 17:15
-                        </div>
-                        <div class="title-container">
-                             Predicting Purchase Affinity on Ecommerce
-                        </div>
-                        <div class="speakers-container">
-                            <ul class="speakers-list">
-                                <li>
-                                    <i class="fas fa-user"></i> Insider
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-container clearfix green-bg-transparent">
-                    <div class="visual-container">
-                        <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined" src="../assets/visuals/speaker.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer></amp-img>
-                    </div>
-                    <div class="detail-container">
-                        <div class="time-container">
-                            <i class="fa fa-clock-o"></i> 15:15 - 17:15
-                        </div>
-                        <div class="title-container">
-                            ING ile LinkedIn’de Etkili Networking
-                        </div>
-                        <div class="speakers-container">
-                            <ul class="speakers-list">
-                                <li>
-                                    <i class="fas fa-user"></i> ING Bank
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-container clearfix green-bg-transparent">
-                    <div class="visual-container">
-                        <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined" src="../assets/visuals/speaker.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer></amp-img>
-                    </div>
-                    <div class="detail-container">
-                        <div class="time-container">
-                            <i class="fa fa-clock-o"></i> 15:15 - 17:15
-                        </div>
-                        <div class="title-container">
-                             Real Time Emotion Recognition with Deep Learning
-                        </div>
-                        <div class="speakers-container">
-                            <ul class="speakers-list">
-                                <li>
-                                    <i class="fas fa-user"></i> Serhat Çillidağ - CTO, Intenseye
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div> 
-                 <div class="item-container clearfix green-bg-transparent">
-                    <div class="visual-container">
-                        <amp-img layout="responsive" width="1" height="1" class="visual i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined" src="../assets/visuals/speaker.png" alt="" i-amphtml-layout="responsive"><i-amphtml-sizer style="padding-top: 100%;"></i-amphtml-sizer></amp-img>
-                    </div>
-                    <div class="detail-container">
-                        <div class="time-container">
-                            <i class="fa fa-clock-o"></i> 15:15 - 17:15
-                        </div>
-                        <div class="title-container">
-                            Siber Güvenliğe Giriş
-                        </div>
-                        <div class="speakers-container">
-                            <ul class="speakers-list">
-                                <li>
-                                    <i class="fas fa-user"></i> Wissen Akademie
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div> -->
-            <!-- </div>
-        </amp-selector>
-    </div>
-</div>  -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- eeee -->
-
-
-<!-- burda emin
-        <div class="detail-single detail-single-trip">
-            <div class="detail-single-text">
-                <h3>Şirket Gezileri</h3>
-                <p>Bilişim sektöründen şirketleri gezmek, çalışma ortamlarını görüp farklı departmanlardan çalışanlarla
-                    tanışmak teknolojinin zirvesindeki ayrıcalıklarınızdan birisi...</p>
-                <a class="program-button" href="/program">
-                    <button>Program <i class="fas fa-arrow-right"></i> </button>
-                </a>
-            </div>
-            <div class="detail-single-carousel">
-                <amp-carousel height="300" layout="fixed-height" type="carousel">
-                    <div class="carousel-item image-single image-wide carousel-cover">
-                        <amp-img src="../assets/details/trips/yemeksepeti.jpg" layout="fill" alt="YemekSepeti">
-                        </amp-img>
-                        <div class="carousel-title">
-                            <h4>
-                                YemekSepeti
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="carousel-item image-single image-wide carousel-cover">
-                        <amp-img src="../assets/details/trips/digiturk.jpg" layout="fill" alt="Digiturk"></amp-img>
-                        <div class="carousel-title">
-                            <h4>
-                                Digiturk
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="carousel-item image-single image-wide carousel-cover">
-                        <amp-img src="../assets/details/trips/sap.jpg" layout="fill" alt="SAP Türkiye"></amp-img>
-                        <div class="carousel-title">
-                            <h4>
-                                SAP Türkiye
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="carousel-item image-single image-wide carousel-cover">
-                        <amp-img src="../assets/details/trips/armut.jpg" layout="fill" alt="Armut"></amp-img>
-                        <div class="carousel-title">
-                            <h4>
-                                Armut
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="carousel-item image-single image-wide carousel-cover">
-                        <amp-img src="../assets/details/trips/adcolony.jpg" layout="fill" alt="Adcolony"></amp-img>
-                        <div class="carousel-title">
-                            <h4>
-                                Adcolony
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="carousel-item image-single image-wide carousel-cover">
-                        <amp-img src="../assets/details/trips/getir.jpg" layout="fill" alt="Getir"></amp-img>
-                        <div class="carousel-title">
-                            <h4>
-                                Getir
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="carousel-item image-single image-wide carousel-cover">
-                        <amp-img src="../assets/details/trips/microsoft.jpg" layout="fill" alt="Microsoft"></amp-img>
-                        <div class="carousel-title">
-                            <h4>
-                                Microsoft
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="carousel-item image-single image-wide carousel-cover">
-                        <amp-img src="../assets/details/trips/insider.jpg" layout="fill" alt="Insider"></amp-img>
-                        <div class="carousel-title">
-                            <h4>
-                                Insider
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="carousel-item image-single image-wide carousel-cover">
-                        <amp-img src="../assets/details/trips/sahibinden.jpg" layout="fill" alt="Sahibinden"></amp-img>
-                        <div class="carousel-title">
-                            <h4>
-                                Sahibinden
-                            </h4>
-                        </div>
-                    </div>
-                </amp-carousel>
-            </div>
-        </div>
-
-        <div class="detail-single detail-single-fuaye">
-            <div class="detail-single-text">
-                <h3>Fuaye Alanı</h3>
-                <p>Fuaye alanında farklı teknolojik ürünleri deneme ve şirket stantlarında sorularını sorma fırsatı seni
-                    bekliyor.</p>
-                <a class="program-button" href="/program">
-                    <button>Program <i class="fas fa-arrow-right"></i> </button>
-                </a>
-            </div>
-            <div class="detail-single-carousel">
-                <amp-carousel height="300" layout="fixed-height" type="carousel">
-                    <div class="carousel-item image-single image-wide carousel-cover">
-                        <amp-img src="../assets/details/fuaye/denizyilmaz.jpg" layout="fill"
-                            alt="Robot Şair Deniz Yılmaz"></amp-img>
-                        <div class="carousel-title">
-                            <h4>
-                                Robot Şair Deniz Yılmaz
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="carousel-item image-single image-wide carousel-cover">
-                        <amp-img src="../assets/details/fuaye/sanbot.jpg" layout="fill" alt="Robot Sanbot"></amp-img>
-                        <div class="carousel-title">
-                            <h4>
-                                Robot Sanbot
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="carousel-item image-single image-wide carousel-cover">
-                        <amp-img src="../assets/details/fuaye/3dprinter.jpg" layout="fill" alt="3Dörtgen 3D Yazıcı">
-                        </amp-img>
-                        <div class="carousel-title">
-                            <h4>
-                                3D Yazıcı - 3Dörtgen
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="carousel-item image-single image-wide carousel-cover">
-                        <amp-img src="../assets/details/fuaye/airbar.jpg" layout="fill" alt="Airbar"></amp-img>
-                        <div class="carousel-title">
-                            <h4>
-                                Airbar
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="carousel-item image-single image-wide carousel-cover">
-                        <amp-img src="../assets/details/fuaye/hololens.jpg" layout="fill" alt="Hololens - VR-Masters">
-                        </amp-img>
-                        <div class="carousel-title">
-                            <h4>
-                                Hololens - VR-Masters
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="carousel-item image-single image-wide carousel-cover">
-                        <amp-img src="../assets/details/fuaye/insider.jpg" layout="fill" alt="Insider"></amp-img>
-                        <div class="carousel-title">
-                            <h4>
-                                Insider
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="carousel-item image-single image-wide carousel-cover">
-                        <amp-img src="../assets/details/fuaye/teb.jpg" layout="fill" alt="TEB"></amp-img>
-                        <div class="carousel-title">
-                            <h4>
-                                TEB
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="carousel-item image-single image-wide carousel-cover">
-                        <amp-img src="../assets/details/fuaye/cukulats.jpg" layout="fill" alt="Çukulats"></amp-img>
-                        <div class="carousel-title">
-                            <h4>
-                                Çukulats
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="carousel-item image-single image-wide carousel-cover">
-                        <amp-img src="../assets/details/fuaye/torku.jpg" layout="fill" alt="Torku"></amp-img>
-                        <div class="carousel-title">
-                            <h4>
-                                Torku
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="carousel-item image-single image-wide carousel-cover">
-                        <amp-img src="../assets/details/fuaye/huawei.jpg" layout="fill" alt="Huawei"></amp-img>
-                        <div class="carousel-title">
-                            <h4>
-                                Huawei
-                            </h4>
-                        </div>
-                    </div>
-                </amp-carousel>
-            </div>
-        </div>
-    </div>
-
-    <div class="section social-wrapper main-background clearfix">
-        <div class="section section-narrow social-container">
-            <h6 class="text-center">
-                Bizi sosyal medyada takip et:
-            </h6> burda emin --> 
-            <!--
-            <div class="instagram-container">
-                    <amp-instagram
-                        data-shortcode="Bs3hJxcFp9I"
-                        width="429"
-                        height="286"
-                        layout="responsive">
-                    </amp-instagram>
-                    <amp-instagram
-                            data-shortcode="BsJKnctlXBX"
-                            width="429"
-                            height="224"
-                            layout="responsive">
-                    </amp-instagram>
-                    <amp-instagram
-                            data-shortcode="Br5xsWQldp8"
-                            width="429"
-                            height="340"
-                            layout="responsive">
-                    </amp-instagram>
-            </div>
-            -->
-            <!-- burda emin
-            <div class="social-media-icons">
-                <a href="https://www.facebook.com/bountechsummit/" target="_blank">
-                    <div class="icon-container">
-                        <i class="fab fa-facebook"></i>
-                    </div>
-                </a>
-                <a href="https://twitter.com/BounTechsummit" target="_blank">
-                    <div class="icon-container">
-                        <i class="fab fa-twitter"></i>
-                    </div>
-                </a>
-                <a href="https://www.instagram.com/bountechsummit/" target="_blank">
-                    <div class="icon-container">
-                        <i class="fab fa-instagram"></i>
-                    </div>
-                </a>
-                <a href="https://www.linkedin.com/company/27115200/" target="_blank">
-                    <div class="icon-container">
-                        <i class="fab fa-linkedin"></i>
-                    </div>
-                </a>
-
-            </div>
-
-            <div class="subscribe-container">
-                <form action="https://us-central1-firstproject-65315.cloudfunctions.net/subscribe" method="get"
-                    target="_top">
-
-                    <input name="email" type="email" value="" class="mail-input" placeholder="Email Adresi...">
-                    <div class="response" submit-success>
-                        <template type="amp-mustache">
-                            Mailiniz başarılı bir şekilde kaydedildi
-                        </template>
-                    </div>
-                    <div class="response" submit-error>
-                        <template type="amp-mustache">
-                            Bir problem oluştu
-                        </template>
-                    </div>
-                    <br>
-                    <input type="submit" value="Takipte Kal" name="subscribe" class="button">
-                </form>
-            </div>
-        </div>
-
-        <div class="bottom white-bottom"></div>
-        <div class="top"></div>
-    </div>
-
-    <div class="section section-narrow sponsors">
-        <h1>Sponsorlar</h1>
-        <div class="main-sponsor">
-            <h2>Ana Sponsor</h2>
-            <div class="main-img-wrapper">
-                <a href="https://www.ingbank.com.tr/en" target="_blank">
-                    <amp-img layout="fill" src="assets/sponsors/ing-logo.png"></amp-img>
-                </a>
-            </div>
-        </div>
-        <h2>Altın Sponsorlar</h2>
-        <div class="gold-sponsor clearfix">
-            <div class="gold-img-wrapper">
-                <a href="https://www.sestek.com/" target="_blank">
-                    <amp-img layout="fill" src="assets/sponsors/site-logo-XL.png"></amp-img>
-                </a>
-            </div>
-            <div class="gold-img-wrapper long">
-                <a href="http://www.teknasyon.com/" target="_blank">
-                    <amp-img layout="fill" src="assets/sponsors/teknasyon.png"></amp-img>
-                </a>
-            </div>
-            <div class="gold-img-wrapper">
-                <a href="https://useinsider.com/" target="_blank">
-                    <amp-img layout="fill" src="assets/sponsors/Insider_logo.png"></amp-img>
-                </a>
-            </div>
-            <div class="gold-img-wrapper high">
-                <a href="https://www.getir.com/" target="_blank">
-                    <amp-img layout="fill" src="assets/sponsors/getir bi mutluluk.png"></amp-img>
-                </a>
-            </div>
-        </div>
-        <h2>Teknoloji Sponsorları</h2>
-        <div class="tech-sponsor clearfix">
-            <div class="tech-img-wrapper">
-                <a href="http://www.hangaarlab.com/" target="_blank">
-                    <amp-img layout="fill" src="assets/sponsors/hangaarlab.png"></amp-img>
-                </a>
-            </div>
-            <div class="tech-img-wrapper">
-                <a href="https://www.pandorareality.com/" target="_blank">
-                    <amp-img layout="fill" src="assets/sponsors/pandora.jpg"></amp-img>
-                </a>
-            </div>
-            <div class="tech-img-wrapper">
-                <a href="https://www.promobot.com.tr/" target="_blank">
-                    <amp-img layout="fill" src="assets/sponsors/promobot.png"></amp-img>
-                </a>
-            </div>
-            <div class="tech-img-wrapper">
-                <a href="http://www.robtek.com.tr/" target="_blank">
-                    <amp-img layout="fill" src="assets/sponsors/robtek.jpg"></amp-img>
-                </a>
-            </div>
-            <div class="tech-img-wrapper">
-                <a href="https://www.techdroneleague.com/" target="_blank">
-                    <amp-img layout="fill" src="assets/sponsors/tdl.png"></amp-img>
-                </a>
-            </div>
-            <div class="tech-img-wrapper">
-                <a href="https://www.poligonmuhendislik.com" target="_blank">
-                    <amp-img layout="fill" src="assets/sponsors/poligon.png"></amp-img>
-                </a>
-            </div>
-            <div class="tech-img-wrapper">
-                <a href="https://www.solvoyo.com/" target="_blank">
-                    <amp-img layout="fill" src="assets/sponsors/solvoyo.svg"></amp-img>
-                </a>
-            </div>
-        </div>
-
-        <div class="sponsor-all">
-            <a href="/sponsorlar">
-                <div>
-                    Tüm Sponsorlar
-                </div>
-            </a>
-        </div>
-    </div>
-
-    <div class="section social-wrapper main-background clearfix">
-        <div class="section section-narrow social-container">
-            <h3 class="text-center">
-                Hemen Yerini Al
-            </h3>
-            <p class="text-center">Üç gün boyunca farklı ve verimli bir deneyim yaşamak, teknolojiyle #YenidenTanışmak
-                için biletini şimdi al.</p>
-            <div class="hero-button hero-button-ticket">
-                <a href="/kayıt" class="">
-                    <i class="fas fa-ticket-alt"></i>Bilet Al
-                </a>
-            </div>
-        </div>
-
-        <div class="bottom white-bottom"></div>
-        <div class="top"></div>
-    </div>
-
-  burda emin -->
-
-
 
     <div class="section layout-narrow contact-us-container text-center">
         <div class="contact-us">
@@ -3910,9 +2014,7 @@ background-blend-mode: luminosity;
                 <li class="info-list-item font-l" itemprop="address">
                     <i class="fas fa-map-marker-alt highlight">
                     </i>Natuk Birkan Binası, Boğaziçi Üniversitesi Güney Kampüs</li>
-                <!-- <li class="info-list-item font-l" itemprop="address">
-                    <i class="fas fa-map-marker-alt highlight">
-                    </i>Garanti Kültür Merkezi, Boğaziçi Üniversitesi Uçaksavar Kampüsü</li> -->
+               
                 <li class="info-list-item font-l" itemprop="email">
                     <a href="mailto:hello@boun.compec.org" target="_top"><i
                             class="fas fa-envelope highlight"></i>hello@boun.compec.org</a>
@@ -3945,24 +2047,7 @@ background-blend-mode: luminosity;
                         <br>
                         <a href="tel:+905417266836" target="_top"> <i class="fas fa-phone"></i> +90 541 72 66 836</a>
                     </li>
-                    <!-- <hr>
-                    <li class="info-list-item">
-                        <i class="fas fa-user"></i> Emin Deniz
-                        <br>
-                        <a href="mailto:emin.deniz@compec.org" target="_top"> <i class="fas fa-envelope"></i>
-                            emin.deniz@compec.org</a>
-                        <br>
-                        <a href="tel:+905364433684" target="_top"> <i class="fas fa-phone"></i> +90 536 44 33 684</a>
-                    </li>
-                    <hr>
-                    <li class="info-list-item">
-                        <i class="fas fa-user"></i> Mert Gökçe
-                        <br>
-                        <a href="mailto:mert.gokce@compec.org" target="_top"> <i class="fas fa-envelope"></i>
-                            mert.gokce@compec.org</a>
-                        <br>
-                        <a href="tel:+905396517843" target="_top"> <i class="fas fa-phone"></i>  +90 539 651 78 43</a>
-                    </li> -->
+                 
                 </div>
             </ul>
         </div>
@@ -3974,9 +2059,6 @@ background-blend-mode: luminosity;
         </amp-iframe>
     </div>
 
-
-
-    
     <footer id="footer" class="section" style="color:white;">
         <div class="footer-text" style="text-align:center; padding-bottom: 10px;">
             <p>Copyright © 2019. Tüm hakkı saklıdır. Etkinliğin tüm hakları Compec'e (Boğaziçi Üniversitesi Bilişim
